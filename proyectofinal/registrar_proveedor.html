@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <div class=" modal-body modal-dialog">
+        <div class="container col-lg-11">
+            <div class="modal-content col-lg-9">
+                <form class="text-center" method="post" action="Funcion_registar_proveedor.php">
+                    <img src="img/usuario.png" width="128px" height="128px">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="finca" class="form-label">Nombre de Finca</label>
+                        <input type="text" class="form-control" id="finca" name="finca" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Registrar</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='index.html'">inicio</button>
+                </form>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
